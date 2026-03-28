@@ -6,6 +6,9 @@ on:
 jobs:
   notify-revisor:
     runs-on: ubuntu-latest
+    permissions: # Adicionar isto explicitamente também ajuda
+      pull-requests: write
+      issues: write
     steps:
       - name: Deixar comentário de aviso
         uses: actions/github-script@v6
@@ -15,5 +18,5 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: "Um novo Pull Request foi aberto para revisão."
+              body: "👋 Olá! Pull Request pronto para revisão conforme a Ficha 1. [cite: 101, 103]"
             })
