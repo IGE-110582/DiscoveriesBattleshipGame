@@ -9,7 +9,7 @@ public class Carrack extends Ship {
 
     /**
      * @param bearing
-     * @param pos
+     * @param sadadsadadasdadadasda
      */
     public Carrack(Compass bearing, IPosition pos) throws IllegalArgumentException {
         super(Carrack.NAME, bearing, pos);
